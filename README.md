@@ -60,8 +60,8 @@ const connex = useConnex()
 // ..
 
 // always get an address
-await getAddress("0x981ebf8F1F98465F93fd0208a0b5e531DdC37815") 
-await getAddress("hello.vet") 
+await getAddress("0x981ebf8F1F98465F93fd0208a0b5e531DdC37815", connex) 
+await getAddress("hello.vet", connex) 
 ```
 
 
@@ -99,5 +99,5 @@ const connex = useConnex()
 // ..
 
 // get the primary name for an address
-await getName("0x981ebf8F1F98465F93fd0208a0b5e531DdC37815") 
+await getName("0x981ebf8F1F98465F93fd0208a0b5e531DdC37815", connex) 
 ```

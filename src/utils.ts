@@ -56,5 +56,5 @@ export async function getName(address: string, connex: Connex): Promise<string> 
 }
 
 export async function getAddress(addressOrName: string, connex: Connex): Promise<string> {
-    return isAddress(addressOrName) ? addressOrName : getRecord(addressOrName, connex)
+    return isAddress(addressOrName) ? addressOrName : await getRecord(addressOrName, connex)
 }
