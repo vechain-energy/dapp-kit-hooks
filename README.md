@@ -1,6 +1,10 @@
-A collection of simple helpers to simplify interaction with Vechain.
+- A collection of simple helpers to simplify interaction with Vechain.
+- The naming lookup is handled with [vet.domains](https://vet.domains) and supported for MainNet only.
+- Requires a correctly set up [dapp-kit-react](https://www.npmjs.com/package/@vechain/dapp-kit-react).
 
-The naming lookup is handled with [vet.domains](https://vet.domains) and supported for MainNet only.
+```shell
+yarn add @vechain.energy/dapp-kit-hooks
+```
 
 # Hooks
 
