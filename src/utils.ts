@@ -33,10 +33,10 @@ export async function getRecord(name: string, connex: Connex): Promise<string> {
     const node = namehash(name);
 
     const { decoded: { resolverAddress }, reverted: noResolver } = await connex.thor.account(VET_REGISTRY_ADDRESS).method(ABI.resolver).call(node);
-    if (noResolver || resolverAddress === ZeroAddress) { return ZeroAddress; }
+    if (noResolver || resolverAddress === ZeroAddress) { throw new Error('Resolver not configurd') }
 
     const { decoded: { address }, reverted: noLookup } = await connex.thor.account(resolverAddress).method(ABI.addr).call(node);
-    if (noLookup) { return ZeroAddress; }
+    if (noLookup) { throw new Error('Resolver returned no address') }
 
     return address;
 }
