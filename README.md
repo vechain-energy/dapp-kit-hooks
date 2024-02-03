@@ -68,7 +68,7 @@ await getAddress("hello.vet", connex)
 ## `getRecord(name, connex)`
 
 - Lookup the address record for a name manually.
-- Returns address of ZeroAddress (`0x0000000000000000000000000000000000000000`).
+- Returns address or throws if no resolver or address is set
 
 ```js
 import { useConnex } from "@vechain/dapp-kit-react"
