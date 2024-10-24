@@ -9,6 +9,8 @@
     "skipLibCheck": true, /* Skip type checking of declaration files. */
     "forceConsistentCasingInFileNames": true, /* Disallow inconsistently */
     "strict": true, /* Enable all strict type-checking options. */
+    "allowImportingTsExtensions": true,
+    "noEmit": true // or "emitDeclarationOnly"
   },
   "include": [
     "src",

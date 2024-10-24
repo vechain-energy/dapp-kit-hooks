@@ -1,6 +1,6 @@
 import React from "react"
 import { useConnex } from "@vechain/dapp-kit-react"
-import { getName } from "./utils"
+import { getName } from "./utils.ts"
 
 const MAIN_GENESIS_ID = '0x00000000851caf3cfdb6e899cf5958bfb1ac3413d346d43539627e6be7ec1b4a'
 

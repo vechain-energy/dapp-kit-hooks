@@ -1,5 +1,5 @@
-import { useWalletName } from './useWalletName';
-import { getRecord, getName, getAddress } from './utils';
+import { useWalletName } from './useWalletName.ts';
+import { getRecord, getName, getAddress } from './utils.ts';
 
 export {
     useWalletName,
